@@ -14,9 +14,9 @@ class LifecycleComponent extends React.Component {
   }
 
   componentDidMount() {
-    this.timeID = setInterval(
+    this.timeID = setTimeout(
       () => this.tick(),
-      1000
+      3000
     );
     console.log('Component Did Mount');
   }

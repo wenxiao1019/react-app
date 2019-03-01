@@ -2,6 +2,7 @@ import React from 'react';
 
 import Clock from './components/test/Clock';
 import Header from './components/test/Header';
+import LifecycleComponent from './components/test/LifecycleComponent';
 import MouseTracker from './components/test/MouseTracker';
 
 class App extends React.Component {
@@ -13,6 +14,8 @@ class App extends React.Component {
         <MouseTracker />
         <hr />
         <Clock />
+        <hr />
+        <LifecycleComponent />
       </div>
     );
   }
