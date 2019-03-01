@@ -22,20 +22,24 @@ class LifecycleComponent extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log('Component Will Receive Props', nextProps);
+    console.log('Component will Receive Props, [this.props]', this.props);
+    console.log('Component Will Receive Props, [nextProps]', nextProps);
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    console.log('Should Component Update', nextProps, nextState);
+    console.log('Should Component Update, [this.props, this.state]', this.props, this.state);
+    console.log('Should Component Update, [nextProps, nextState]', nextProps, nextState);
     return true;
   }
 
   componentWillUpdate(nextProps, nextState) {
-    console.log('Component Will Update', nextProps, nextState);
+    console.log('Component Will Update, [this.props, this.state]', this.props, this.state);
+    console.log('Component Will Update, [nextProps, nextState]', nextProps, nextState);
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log('Component Did Update', prevProps, prevState);
+    console.log('Component Did Update, [prevProps, prevState]', prevProps, prevState);
+    console.log('Component Did Update, [this.props, this.state]', this.props, this.state);
   }
 
   componentWillUnmount() {
